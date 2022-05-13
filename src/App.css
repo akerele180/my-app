@@ -6,16 +6,13 @@
   font-family: Patty !important;
   background-image: url(./assets/main-images.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   min-height: 100vh;
   color: #ffffff;
 }
 nav {
   height: 13vh;
 }
-/* ul {
-  list-style: none;
-} */
 #connect-wallet-btn,
 .soc-icos {
   background-color: transparent;
@@ -29,16 +26,19 @@ nav {
 #connect-wallet-btn:hover,
 .soc-icos:hover {
   background-color: transparent !important;
-  background-image: linear-gradient(180deg, #bd25d8 0%, #5b68d8 100%);
-
+  background-image: linear-gradient(
+    180deg,
+    #bd25d8 0%,
+    #5b68d8 100%
+  ) !important;
   transition: all ease 2s !important;
 }
 #connect-wallet-btn {
   font-family: Poppins;
 }
-h1 {
+h2#bold-name {
   color: #ffffff;
-  font-size: 117px !important;
+  font-size: 8.2vw !important;
   font-weight: 600 !important;
   font-style: normal !important;
   -webkit-text-stroke: 2.5px;
@@ -47,14 +47,69 @@ h1 {
   -webkit-text-stroke-color: #c72bbd;
   stroke: #c72bbd;
 }
-section.part2 {
+h3#makes-great {
+  font-size: 3rem !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: currentcolor;
+  stroke-width: 0.5px;
+  -webkit-text-stroke-color: #c72bbd;
+  stroke: #c72bbd;
+}
+h3 span {
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: currentcolor;
+  -webkit-text-stroke-color: #4e70db;
+  stroke: #4e70db;
+  stroke-width: 0.5px;
+}
+/* section.part2 {
   background-image: url(./assets/main-Bg.png);
   transform: rotate(360deg);
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: ; */
+ 
   position: relative;
   height: 100vh;
   z-index: -2;
 
+} */
+.card {
+  background: #362c4685 !important;
+  border-style: solid !important;
+  border-radius: 20px !important;
+  border-width: 2px 2px 2px 2px !important;
+  min-height: 134.2px !important;
+  height: 100%;
+  border-color: #ffffff !important;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s !important;
+  /* margin: 0px 10px 0px 10px; */
+}
+.card:hover {
+  background-color: #5b68d8 !important;
+}
+.card h3 {
+  /* font-size: 1.7vw !important; */
+}
+/* btn-colors */
+#common {
+  background: #d8258a; 
+  border-radius: 15px !important;
+}
+#uncommon {
+  background: #BD25D8; 
+  border-radius: 15px !important;
+}
+#rare {
+  background: #6425D8; 
+  border-radius: 15px !important;
+}
+#super-rare {
+  background: #130728 !important;
+  border-radius: 15px !important;
+}
+#legendary {
+  background: #D87925 !important; 
+  border-radius: 15px !important;
 }
