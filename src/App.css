@@ -89,27 +89,51 @@ h3 span {
 .card:hover {
   background-color: #5b68d8 !important;
 }
-.card h3 {
-  /* font-size: 1.7vw !important; */
-}
 /* btn-colors */
 #common {
-  background: #d8258a; 
+  background: #d8258a;
   border-radius: 15px !important;
 }
 #uncommon {
-  background: #BD25D8; 
+  background: #bd25d8;
   border-radius: 15px !important;
 }
 #rare {
-  background: #6425D8; 
+  background: #6425d8;
   border-radius: 15px !important;
 }
 #super-rare {
-  background: #130728 !important;
+  background: #3323cd !important;
   border-radius: 15px !important;
 }
 #legendary {
-  background: #D87925 !important; 
+  background: #d87925 !important;
   border-radius: 15px !important;
+}
+
+/* accordion */
+
+div.accordion-body {
+  font-family: Poppins;
+  border-radius: 0 0 15px 15px;
+}
+div.accordion-item {
+  background: transparent;
+  border-radius: 20px !important;
+}
+button.accordion-button {
+  border-radius: 15px 15px 0 0 !important;
+}
+button.collapsed {
+  border-radius: 15px !important;
+  background-color: #362c4685;
+  color: #ffffff;
+}
+button.accordion-button:not(.collapsed) {
+  color: #ffffff;
+  background-color: #5b68d8;
+}
+button.accordion-button:focus {
+  outline: none;
+  box-shadow: none;
 }

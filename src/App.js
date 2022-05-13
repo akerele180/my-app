@@ -3,12 +3,21 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaTwitter } from "react-icons/fa";
 import { SiDiscord } from "react-icons/si";
+import ScrollButton from "./component/scrollToTop";
 import gif from "./assets/ezgif.com-gif-maker.gif";
+// import {
+//   Accordion,
+//   AccordionHeader,
+//   AccordionItem,
+//   AccordionBody,
+// } from "reactstrap";
+import Accordion from "react-bootstrap/Accordion";
 // import withRainbow from "./assets/With-rainbow-1024x1024.png";
+import Stratosphere from './assets/exosmosis.png'
 
 function App() {
   return (
-    <div className="App text-uppercase">
+    <div className="App">
       <section>
         {" "}
         <nav className="container d-flex align-items-center justify-content-between py-2">
@@ -74,6 +83,7 @@ function App() {
       <section className="part2 text-center">
         {/* <img className="w-75" src={withRainbow} alt="with-rainbow" /> */}
       </section>
+      {/* what makes nft great */}
       <section>
         <h3 className="text-uppercase text-center" id="makes-great">
           taking back what <span>makes nfts great</span>
@@ -126,7 +136,7 @@ function App() {
           </div>
         </div>
       </section>
-
+      {/* rarities */}
       <section className="container">
         <h3 id="makes-great" className="text-center">
           rar<span>ities</span>
@@ -142,7 +152,7 @@ function App() {
               alt="translating ball"
               style={{ borderRadius: "30px" }}
             />
-            <p id="common" className="btn btn-lg py-2 fs-5  text-white m-3">
+            <p id="common" className="btn btn-lg py-2 fs-5 text-white m-3">
               common
             </p>
             <h4 className="text-center mb-0 fs-3">space cadet</h4>
@@ -153,7 +163,7 @@ function App() {
               alt="translating ball"
               style={{ borderRadius: "30px" }}
             />
-            <p id="uncommon" className="btn btn-lg py-2 fs-5  m-3">
+            <p id="uncommon" className="btn text-white btn-lg py-2 fs-5  m-3">
               uncommon
             </p>
             <h4 className="text-center mb-0 fs-3">bloon</h4>
@@ -164,7 +174,7 @@ function App() {
               alt="translating ball"
               style={{ borderRadius: "30px" }}
             />
-            <p className="btn btn-lg py-2 fs-5  m-3" id="rare">
+            <p className="btn btn-lg py-2 fs-5 text-white m-3" id="rare">
               rare
             </p>
             <h4 className="text-center  mb-0 fs-3">skystar</h4>
@@ -175,7 +185,7 @@ function App() {
               alt="translating ball"
               style={{ borderRadius: "30px" }}
             />
-            <p className="btn btn-lg py-2 fs-5  m-3" id="super-rare">
+            <p className="btn btn-lg py-2 fs-5 text-white m-3" id="super-rare">
               {" "}
               super-rare
             </p>
@@ -198,6 +208,66 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* utility section */}
+      <section className="container">
+        <h3 id="makes-great" className="text-center">
+          uti<span>lity</span>
+        </h3>
+      </section>
+
+      <section>
+        <img src={Stratosphere} alt="" />
+      </section>
+
+      {/* roadmap section */}
+
+      {/* atomspace team */}
+
+      {/* faq */}
+      <section className="container">
+        <h3 className="text-uppercase text-center" id="makes-great">
+          fa<span>q</span>
+        </h3>
+
+        <Accordion className="text-white">
+          <Accordion.Item eventKey="0" className="mt-4 rounded-3 border-0">
+            <Accordion.Header className="">
+              <span className="fs-4">how can i mint?</span>
+            </Accordion.Header>
+            <Accordion.Body className="fs-4" style={{ background: "#BD25D8" }}>
+              .02 eth
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1" className="mt-4 rounded-3 border-0">
+            <Accordion.Header>
+              {" "}
+              <span className="fs-4">how many can i mint?</span>
+            </Accordion.Header>
+            <Accordion.Body style={{ background: "#BD25D8" }}>
+              You can mint up to 5 per transaction. (Unlimited Transactions) if
+              you mint 5 in 1 transactoin, then you will be able airdropped a
+              6th NFT free
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="2" className="mt-4 rounded-3 border-0">
+            <Accordion.Header>
+              <span className="fs-4">what is the collection size?</span>{" "}
+            </Accordion.Header>
+            <Accordion.Body style={{ background: "#BD25D8" }}>
+              7000 Public Mints at .02 + 3000 Whitelisted Free mints
+            </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+      </section>
+
+      {/* footer section */}
+      <footer className="text-center" style={{ background: "#362c4685" }}>
+        <p className="fs-3 lh-lg py-3 text-capitalize">
+          Copyright &copy; 2022 All Right Reserved
+        </p>
+      </footer>
+      <ScrollButton />
     </div>
   );
 }
