@@ -237,7 +237,7 @@ function App() {
             sizes="(max-width: 1173px) 100vw, 1173px"
             width="1173"
             height="479"
-          />sga
+          />
         </div>
       </section>
       {/* atomspace team */}
