@@ -13,7 +13,7 @@ import gif from "./assets/ezgif.com-gif-maker.gif";
 // } from "reactstrap";
 import Accordion from "react-bootstrap/Accordion";
 // import withRainbow from "./assets/With-rainbow-1024x1024.png";
-import Stratosphere from './assets/exosmosis.png'
+import Stratosphere from "./assets/exosmosis.png";
 
 function App() {
   return (
@@ -217,11 +217,29 @@ function App() {
       </section>
 
       <section>
-        <img src={Stratosphere} alt="" />
+        <img className="w-100" src={Stratosphere} alt="" />
       </section>
 
       {/* roadmap section */}
 
+      <section className="container">
+        <h3 id="makes-great" className="text-center">
+          road<span>map</span>
+        </h3>
+        <div className="text-center">
+          {" "}
+          <img
+            src="https://atmospace.co/wp-content/uploads/2022/04/Atmospace_12_new.png"
+            class="attachment-full size-full"
+            alt="roadmap"
+            loading="lazy"
+            srcset="https://atmospace.co/wp-content/uploads/2022/04/Atmospace_12_new.png 1173w, https://atmospace.co/wp-content/uploads/2022/04/Atmospace_12_new-300x123.png 300w, https://atmospace.co/wp-content/uploads/2022/04/Atmospace_12_new-1024x418.png 1024w, https://atmospace.co/wp-content/uploads/2022/04/Atmospace_12_new-768x314.png 768w"
+            sizes="(max-width: 1173px) 100vw, 1173px"
+            width="1173"
+            height="479"
+          />sga
+        </div>
+      </section>
       {/* atomspace team */}
 
       {/* faq */}
