@@ -83,12 +83,13 @@ function App() {
       <section className="part2 text-center">
         {/* <img className="w-75" src={withRainbow} alt="with-rainbow" /> */}
       </section>
+
       {/* what makes nft great */}
       <section>
         <h3 className="text-uppercase text-center" id="makes-great">
           taking back what <span>makes nfts great</span>
         </h3>
-        <div className="row row-cols-1 row-cols-md-3 g-4 container mx-auto">
+        <div className="row row-cols-1 row-cols-md-3 g-4 container mx-auto" id=''>
           <div className="col">
             <div className="card px-5 text-uppercase">
               <h3 className="text-center lh-base">no whitelisting grinding</h3>
@@ -204,7 +205,7 @@ function App() {
             >
               legendary
             </p>
-            <h4 className="text-center mb-0 fs-3">project 2</h4>
+            <h4 className="text-center mb-0 fs-3">project z</h4>
           </div>
         </div>
       </section>
@@ -221,7 +222,6 @@ function App() {
       </section>
 
       {/* roadmap section */}
-
       <section className="container">
         <h3 id="makes-great" className="text-center">
           road<span>map</span>
@@ -240,7 +240,61 @@ function App() {
           />
         </div>
       </section>
+
       {/* atomspace team */}
+      <sectio className="container">
+        <h3 className="text-uppercase text-center" id="makes-great">
+          atmospace <span>team</span>
+        </h3>
+
+        <div className="mx-auto">
+          <div className="col">
+            <div className="card px-5 text-uppercase">
+              <h3 className="text-center lh-base">no whitelisting grinding</h3>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card px-5  text-uppercase">
+              <h3 className="text-center lh-base">
+                {" "}
+                fully <br />
+                doxxed{" "}
+              </h3>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card px-2  text-uppercase">
+              <h3 className="text-center lh-base">
+                {" "}
+                100% of Secondary Profits goes to Community Treasury
+              </h3>
+            </div>
+          </div>
+
+          <div className="col">
+            <div className="card text-uppercase">
+              <h3 className="text-center lh-base">
+                {" "}
+                Cheap Mint <br />
+                Price (.02 ETH){" "}
+              </h3>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card px-4  text-uppercase">
+              <h3 className="text-center lh-base">
+                {" "}
+                30% of mint profits to the community treasury
+              </h3>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card px-5  text-uppercase">
+              <h3 className="text-center lh-base"> Full Transparency</h3>
+            </div>
+          </div>
+        </div>
+      </sectio>
 
       {/* faq */}
       <section className="container">

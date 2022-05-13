@@ -29,7 +29,7 @@ const ScrollButton = () => {
     <Button>
       <MdKeyboardArrowUp
         onClick={scrollToTop}
-        style={{ display: visible ? "inline" : "none", background: "#000000",padding: "5px", borderRadius: "10px"}}
+        style={{ display: visible ? "inline" : "none", background: "#00000080",padding: "5px", borderRadius: "10px"}}
       />
     </Button>
   );
